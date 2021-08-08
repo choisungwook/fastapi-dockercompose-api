@@ -20,9 +20,9 @@ docker volume create fastapi_dockerapi
 docker run --name=dockerapi --rm \
 -p 10090:80 \
 --restart always \
---memory="256m" --cpu-shares=256
+--memory="256m" --cpu-shares=256 \
 -v /var/run/docker.sock:/var/run/docker.sock \
--v fastapi_dockerapi:/app/data
+-v fastapi_dockerapi:/app/data \
 <your-server>/<imagename>:<tag>
 ```
 
