@@ -1,5 +1,5 @@
-# nas-dockerpublic
-nas docker public server
+# 프로젝트 개요
+* fastapi를 이용한 docker-compose API 애플리케이션 개발
 
 # docker build
 ```sh
