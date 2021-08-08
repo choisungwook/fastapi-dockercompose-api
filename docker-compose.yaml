@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "30001:8080"
+    expose:
+      - "8080"
+    networks:
+      - our_net
+
+networks:
+  our_net:
+    driver: bridge
