@@ -22,6 +22,7 @@ docker run --name=dockerapi --rm \
 --restart always \
 --memory="256m" --cpu-shares=256
 -v /var/run/docker.sock:/var/run/docker.sock \
+-v fastapi_dockerapi:/app/data
 <your-server>/<imagename>:<tag>
 ```
 
