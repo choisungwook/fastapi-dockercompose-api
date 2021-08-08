@@ -17,7 +17,7 @@ docker push <your-server>/<imagename>:<tag>
 docker volume create fastapi_dockerapi
 
 # run
-docker run --name=dockerapi --rm \
+docker run --name=dockerapi \
 -p 10090:80 \
 --restart always \
 --memory="256m" --cpu-shares=256 \
